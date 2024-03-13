@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nonso's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script
+      src="https://kit.fontawesome.com/e3870bf88a.js
+      crossorigin="
+      anonymous
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fontawesome.com/icons/angles-up-down?f=classic&s=solid"
+    />
+    <script src="https://unpkg.com/ionicons@[250px].10-0/dist/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Beau+Rivage&family=Poppins:ital,wght@1,400;1,600&family=Trispace:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#43454D]">
+    <nav
+      class="bg-[#292F36] md:h-28 h-auto md:px-[10%] md:py-8 py-6 p[250px] md:flex md:items-center md:justify-between"
+    >
+      <div
+        class="flex justify-between items-center md:pl-1 pl-6 md:pr-0 pr-6 md:relative"
+      >
+        <span class="">
+          <img
+            src="photos/Logo.png"
+            class="cursor-pointer md:w-auto w-[180px] md:ml-0 ml-3"
+            alt="logo"
+          />
+        </span>
+        <!-- <i class="fa-solid fa-bars mt-2 cursor-pointer text-3xl text-[#1D8AEC] mr-6 md:hidden block"
+           onclick="onToggleMenu(this)" name="menu"></i> -->
+        <ion-icon
+          onclick="onToggleMenu(this)"
+          name="menu"
+          class="text-[40px] text-[#12F7D6] mr-2 font-bold cursor-pointer md:hidden block"
+        ></ion-icon>
+      </div>
+
+      <ul
+        class="nav-links md:flex md:items-center md:static md:z-[1] z-[1] absolute
+        md:flex-row flex-col flex items-center justify-center
+         md:min-h-fit min-h-[40vh] left-[-100%] top-[[250px]%] md:pt-0 pt-14 bg-inherit 
+         w-full md:w-auto md:py-0 py-4 md:px-0 px-[12px] ease-in duration-500 md:bg-opacity-0 bg-opacity-100"
+      >
+        <li class="mx-6 md:my-1 md:mt-auto mt-0">
+          <a
+            class="hover:text-[#12F7D6] capitalize text-lg font-semibold text-[#fff] duration-300 active"
+            id="act"
+            href="index.html"
+            >Home</a
+          >
+        </li>
+        <li class="md:mx-12 mx-6 md:my-1 my-6">
+          <a
+            class="capitalize hover:text-white text-lg font-semibold text-[#12F7D6] duration-300"
+            href="about.html"
+            >About Me</a
+          >
+        </li>
+        <div class="bg-white md:w-40 w-44 md:h-8 rounded-full md:mx-6 mx-6" id="search-form">
+          <input type="search" class="h-full w-4/5 rounded-full"
+           id="search-input" placeholder="search.....">
+          <button type="submit"><i class="fa-solid fa-magnifying-glass cursor-pointer"></i></button>
+        </div>
+
+       <span class="flex flex-row px-3 py-1 md:mt-0 mt-6">
+        <li class="md:ml-7 md:mr-6 md:my-0">
+          <a href="https://www.instagram.com/nonso_emmy?igsh=c3k1bjE5NHJ6OTF5" class="">
+            <i class="fa-brands fa-instagram text-[#12F7D6] hover:text-white duration-300 ease-out md:text-2xl text-3xl"></i>
+          </a>
+        </li>
+        <li class="md:mx-4 md:my-0 mx-3">
+          <a href="https://twitter.com/Iamnonso_emmy/" class="">
+            <i class="fa-brands fa-x-twitter text-[#12F7D6] hover:text-white duration-300 ease-out md:text-2xl text-3xl"></i>
+          </a>
+        </li>
+        <li class="md:ml-4 md:my-0">
+          <a href="https://github.com/emmynonso" class="">
+            <i class="fa-brands fa-github text-[#12F7D6] hover:text-white duration-300 ease-out md:text-2xl text-3xl"></i>
+          </a>
+        </li>
+       </span>
+      </ul>
+    </nav>
+
+    <script src="main.js"></script>
+
+    <hr class="bg-[#43454D] w-auto mx-[10%]" />
+
+    <main class="bg-[#1A1E23] w-full h-[850px] md:flex flex-col hidden">
+      <div
+        class="h-[180px] w-full flex items-center flex-col justify-center relative overflow-hidden"
+      >
+        <img
+          src="photos/mouse.png"
+          class=""
+          data-aos="fade-down"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+          alt="mouse"
+        />
+        <img
+          src="photos/Arrow 1.png"
+          class="mt-2"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+          alt="arrow line"
+        />
+      </div>
+      <div class="h-[670px] w-full">
+        <div class="h-[15%] w-full pt-8 relative">
+          <div
+            class="bg-[#292F36] w-[300px] h-[70px] rounded-tl-3xl rounded-bl-3xl rounded-br-3xl mx-[20%] border border-[#54F9E2] grid place-items-center"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+          >
+            <h1
+              class="text-white text-4xl capitalize font-semibold tracking-wider text-center"
+            >
+              About me
+            </h1>
+          </div>
+        </div>
+
+        <div class="h-[85%] w-full items-center justify-center flex">
+          <div
+            class="h-[70%] w-3/5 flex items-center justif] px-[10%] rounded-tl-3xl rounded-bl-3xl rounded-tr-3xl border border-[#54F9E2]"
+          >
+            <p
+              class="text-justify text-xl leading-normal text-white relative"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <span class="font-semibold">Hello!</span> <br />
+              My name is Emmanuel Nonso and I specialize in web development that
+              utilizes
+              <span class="text-[#9747FF]">HTML, CSS, JS,</span> and
+              <span class="text-[#9747FF]">REACT JS</span> etc. I am a highly
+              motivated individual and eternal optimist dedicated to writing
+              clear, concise, robust code that works. Striving to never stop
+              learning and improving. When I'm not coding, I am
+              <span class="text-[#9747FF]">looking up codes,</span> reading, or
+              picking up some new hands-on art project like
+              <span class="text-[#9747FF]">back-end development.</span>
+              I like to have my perspective and belief systems challenged so
+              that I see the world through new eyes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- small screen main -->
+    <main class="md:hidden flex flex-col h-[700px] bg-[#1A1E23]">
+      <div
+        class="h-[20%] w-full flex items-center justify-center flex-col relative overflow-hidden"
+      >
+        <img
+          src="photos/mouse.png"
+          class=""
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+          alt="mouse"
+        />
+        <img
+          src="photos/Arrow 1.png"
+          class="mt-3 h-[60px] w-[10px]"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+          alt="arrow"
+        />
+      </div>
+      <div class="h-[80%] w-full px-[15%] pt-[5%] relative">
+        <div
+          class="h-[15%] w-[55%] bg-[#292F36] rounded-tl-3xl rounded-bl-3xl rounded-br-3xl border border-[#54F9E2] flex items-center justify-center"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
+          <p class="text-xl tracking-wider font-semibold text-white capitalize">
+            about me
+          </p>
+        </div>
+        <div
+          class="h-[70%] my-[15%] w-full rounded-tl-3xl rounded-bl-3xl rounded-tr-3xl py-[10%] px-[5%] border border-[#54F9E2]"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
+          <p class="text-justify text-white text-sm">
+            <span class="text-lg font-semibold">Hello!</span>
+            My name is Sinan and I specialize in web development that utilizes
+            <span class="text-[#9747FF]">HTML, CSS, JS,</span> and
+            <span class="text-[#9747FF]">REACT JS</span> etc. I am a highly
+            motivated individual and eternal optimist dedicated to writing
+            clear, concise, robust code that works. Striving to never stop
+            learning and improving. When I'm not coding, I am
+            <span class="text-[#9747FF]">looking up codes,</span> reading, or
+            picking up some new hands-on art project like photography. I like to
+            have my perspective and belief systems challenged so that I see the
+            world through new eyes.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- big screen section -->
+    <section
+      class="h-[750px] w-full bg-cover md:block hidden"
+      style="
+        background-image: url('photos/unsplash_lYFERR5dTG4.png');
+        background-repeat: no-repeat;
+        background-size: 1500px;
+        background-position: center;
+      "
+    >
+      <div
+        class="h-full w-full md:flex hidden flex-col bg-[#292F36] bg-opacity-[0.9] overflow-hidden"
+      >
+        <div
+          class="h-[65%] w-full flex flex-col items-center justify-center relative"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
+          <img src="photos/mouse.png" class="" alt="mouse" />
+          <img src="photos/Arrow 1.png" class="my-4" alt="arrow" />
+          <h1
+            class="text-5xl text-[#12F7D6] decoration-dotted font-semibold tracking-wider"
+          >
+            Skills
+          </h1>
+          <img src="photos/Line 22.png" class="" alt="line" />
+          <p class="text-base text-white my-2">
+            I am striving to never stop learning and improving
+          </p>
+          <img src="photos/Services.png" class="my-4" alt="services" />
+          <img
+            src="photos/_.png"
+            class="absolute w-[150px] right-[20%] top-[10%]"
+            alt="code"
+          />
+        </div>
+        <div
+          class="h-[35%] w-full flex flex-row justify-center overflow-hidden"
+        >
+          <div
+            class="w-[15%] h-full flex flex-col justify-center items-center relative"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            <span
+              class="py-5 px-5 bg-[#E54F26] rounded-full cursor-pointer hover:animate-pulse"
+              ><img src="photos/html5.png" alt="html logo"
+            /></span>
+            <h5 class="text-[#E54F26] mt-6 text-lg uppercase font-semibold">
+              html
+            </h5>
+          </div>
+          <div
+            class="w-[15%] h-full flex flex-col justify-center items-center"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            <span
+              class="py-5 px-5 bg-[#0C73B8] rounded-full cursor-pointer hover:animate-pulse"
+              ><img src="photos/css3-alt.png" alt="css logo"
+            /></span>
+            <h5 class="text-[#0C73B8] mt-6 text-lg uppercase font-semibold">
+              css
+            </h5>
+          </div>
+          <div
+            class="w-[15%] h-full flex flex-col justify-center items-center"
+            data-aos="flip-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            <span
+              class="py-5 px-5 bg-[#E7A020] rounded-full cursor-pointer hover:animate-pulse"
+              ><img src="photos/node-js.png" alt="node-js logo"
+            /></span>
+            <h5 class="text-[#E7A020] mt-6 text-lg uppercase font-semibold">
+              node-js
+            </h5>
+          </div>
+          <div
+            class="w-[15%] h-full flex flex-col justify-center items-center"
+            data-aos="flip-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            <span
+              class="py-5 px-5 bg-[#28A9E0] rounded-full cursor-pointer hover:animate-pulse"
+              ><img src="photos/react.png" alt="react logo"
+            /></span>
+            <h5 class="text-[#28A9E0] mt-6 text-lg uppercase font-semibold">
+              react js
+            </h5>
+          </div>
+          <div
+            class="w-[15%] h-full flex flex-col justify-center items-center"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            <span
+              class="py-6 px-2 bg-[#28A9E0] rounded-full cursor-pointer hover:animate-pulse"
+              ><img src="photos/Vector (2).png" alt="tailwindcss logo"
+            /></span>
+            <h5 class="text-[#28A9E0] mt-6 text-lg uppercase font-semibold">
+              tailwind css
+            </h5>
+          </div>
+          <div
+            class="w-[15%] h-full flex flex-col justify-center items-center"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            <span
+              class="py-8 px-5 bg-[#28e06f] rounded-full cursor-pointer hover:animate-pulse"
+              ><img src="photos/Vector (1).png" alt="javascript logo"
+            /></span>
+            <h5 class="text-[#28e06f] mt-6 text-lg uppercase font-semibold">
+              javascript
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- small screen section -->
+    <section
+      class="h-[900px] w-full bg-red-300 md:hidden block"
+      style="
+        background-image: url('photos/unsplash_lYFERR5dTG4.png');
+        background-repeat: no-repeat;
+        background-position: center;
+      "
+    >
+      <div class="flex flex-col h-full w-full bg-[#292F36] bg-opacity-[0.9]">
+        <div
+          class="h-[30%] w-full flex flex-col items-center justify-center relative overflow-hidden"
+        >
+          <h1
+            class="text-[#12F7D6] text-4xl font-semibold tracking-wider my-2"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            skills
+          </h1>
+          <img
+            src="photos/Line 22.png"
+            class="w-[100px] mt-1"
+            alt="line"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          />
+          <p
+            class="text-white my-2"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            I am striving to never stop learning and improving
+          </p>
+          <img
+            src="photos/Services.png"
+            class="w-[180px] my-3"
+            alt="services"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          />
+        </div>
+        <div class="h-[70%] w-full">
+          <!-- 1st set -->
+          <div class="flex flex-row h-[210px] w-full relative overflow-hidden">
+            <div
+              class="w-1/2 h-full flex flex-col items-center justify-center"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <span
+                class="py-5 px-5 bg-[#E54F26] rounded-full cursor-pointer hover:animate-pulse"
+                ><img src="photos/html5.png" alt="html logo"
+              /></span>
+              <h5 class="text-[#E54F26] mt-6 text-lg uppercase font-semibold">
+                html
+              </h5>
+            </div>
+            <div
+              class="w-1/2 h-full flex flex-col items-center justify-center"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <span
+                class="py-5 px-5 bg-[#0C73B8] rounded-full cursor-pointer hover:animate-pulse"
+                ><img src="photos/css3-alt.png" alt="css logo"
+              /></span>
+              <h5 class="text-[#0C73B8] mt-6 text-lg uppercase font-semibold">
+                css
+              </h5>
+            </div>
+          </div>
+          <!-- 2nd set -->
+          <div class="flex flex-row h-[210px] w-full relative overflow-hidden">
+            <div
+              class="w-1/2 h-full flex flex-col items-center justify-center"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <span
+                class="py-5 px-5 bg-[#E7A020] rounded-full cursor-pointer hover:animate-pulse"
+                ><img src="photos/node-js.png" alt="node-js logo"
+              /></span>
+              <h5 class="text-[#E7A020] mt-6 text-lg uppercase font-semibold">
+                node-js
+              </h5>
+            </div>
+            <div
+              class="w-1/2 h-full flex flex-col items-center justify-center"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <span
+                class="py-5 px-5 bg-[#28A9E0] rounded-full cursor-pointer hover:animate-pulse"
+                ><img src="photos/react.png" alt="react logo"
+              /></span>
+              <h5 class="text-[#28A9E0] mt-6 text-lg uppercase font-semibold">
+                react js
+              </h5>
+            </div>
+          </div>
+          <!-- 3rd set -->
+          <div class="flex flex-row h-[210px] w-full relative overflow-hidden">
+            <div
+              class="w-1/2 h-full flex flex-col items-center justify-center"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <span
+                class="py-6 px-2 bg-[#28A9E0] rounded-full cursor-pointer hover:animate-pulse"
+                ><img src="photos/Vector (2).png" alt="tailwindcss logo"
+              /></span>
+              <h5 class="text-[#28A9E0] mt-6 text-lg uppercase font-semibold">
+                tailwind css
+              </h5>
+            </div>
+            <div
+              class="w-1/2 h-full flex flex-col items-center justify-center"
+              data-aos="fade-down"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <span
+                class="py-8 px-5 bg-[#28e06f] rounded-full cursor-pointer hover:animate-pulse"
+                ><img src="photos/Vector (1).png" alt="javascript logo"
+              /></span>
+              <h5 class="text-[#28e06f] mt-6 text-lg uppercase font-semibold">
+                javascript
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- big screen article -->
+    <article
+      class="md:h-[3900px] w-full md:flex flex-col bg-repeat-round hidden"
+      style="
+        background-image: url('photos/Image\ 11\ 1.png');
+        background-size: 600px;
+      "
+    >
+      <div class="bg-[#1A1E23] opacity-[0.9] w-full flex flex-col h-full overflow-hidden">
+        <div
+          class="md:h-[300px] h-[20%] w-full flex flex-col items-center justify-center"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
+          <img src="photos/mouse.png" class="w-auto" alt="green mouse" />
+          <img src="photos/Arrow 1.png" class="my-4 h-auto" alt="arrow" />
+          <h1 class="text-5xl text-[#12F7D6] tracking-wider">projects</h1>
+          <img src="photos/Line 22.png" class="my-2 w-52" alt="" />
+          <p class="text-white text-center">
+            I had the pleasure of building these awesome projects <br />with
+            various tech stacks
+          </p>
+        </div>
+
+        <!-- projects div -->
+        <div class="h-[900px] w-full flex flex-col">
+          <!-- sub div 1 -->
+          <div
+            class="md:h-[900px] h-full w-full relative md:px-[15%] md:py-[7%] px-[10%] py-[10%]"
+          >
+            <span class="flex flex-row justify-between">
+              <h1 class="text-white font-bold md:text-3xl text-sm md:my-4 my-1">
+                GetLinked Hackathon Project
+              </h1>
+              <a
+                href="getlink-nonso-io.vercel.app"
+                class="font-semibold md:text-3xl md:my-4 text-sm my-1 text-[#12F7D6] duration-300 ease-out hover:underline"
+                >Visit Website</a
+              >
+            </span>
+
+            <style>
+              @media (min-width: 768px) {
+                swiper-container {
+                  width: 100%;
+                  height: 82%;
+                }
+
+                swiper-slide {
+                  text-align: center;
+                  font-size: 18px;
+                  background: #fff;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 24px;
+                }
+
+                swiper-slide img {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+            </style>
+
+            <swiper-container
+              class="mySwiper"
+              navigation="true"
+              pagination="true"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <!-- swiper 1 -->
+              <swiper-slide class="bg-[#150e28]">
+                <img src="photos/getlinked.jpg" class="" alt="site photo" />
+              </swiper-slide>
+              <!-- swiper 2 -->
+              <swiper-slide class="bg-[#150e28]">
+                <img src="photos/getlink2.jpg" class="" alt="site photo" />
+              </swiper-slide>
+              <!-- swiper 3 -->
+              <swiper-slide class="bg-[#150e28]">
+                <img src="photos/getlink3.jpg" class="" alt="site photo" />
+              </swiper-slide>
+              <!-- swiper 4 -->
+              <swiper-slide class="bg-[#150e28]">
+                <img src="photos/getlink4.jpg" class="" alt="site photo" />
+              </swiper-slide>
+              <!-- swiper 5 -->
+              <swiper-slide class="bg-[#150e28]">
+                <img src="photos/getlink5.jpg" class="" alt="site photo" />
+              </swiper-slide>
+              <!-- swiper 6 -->
+              <swiper-slide class="bg-[#150e28]">
+                <img src="photos/getlink6.jpg" class="" alt="site photo" />
+              </swiper-slide>
+            </swiper-container>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+            <h1
+              class="text-white text-center font-semibold text-3xl capitalize my-6"
+            >
+              built with:
+              <span class="text-[#12F7D6]"
+                >html, tailwind css and vanilla javascript</span
+              >
+            </h1>
+          </div>
+        </div>
+        <!-- projects div -->
+        <div class="h-[900px] w-full flex flex-col">
+          <!-- sub div 1 -->
+          <div
+            class="md:h-[900px] h-full w-full relative md:px-[15%] md:py-[7%] px-[10%] py-[10%]"
+          >
+            <span class="flex flex-row justify-between">
+              <h1 class="text-white font-bold md:text-3xl text-sm md:my-4 my-1">
+                Personal Portfolio
+              </h1>
+              <a
+                href="getlink-nonso-io.vercel.app"
+                class="font-semibold md:text-3xl md:my-4 text-sm my-1 text-[#12F7D6] duration-300 ease-out hover:underline"
+                >Visit Website</a
+              >
+            </span>
+
+            <style>
+              @media (min-width: 768px) {
+                swiper-container {
+                  width: 100%;
+                  height: 82%;
+                }
+
+                swiper-slide {
+                  text-align: center;
+                  font-size: 18px;
+                  background: #fff;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 24px;
+                }
+
+                swiper-slide img {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+            </style>
+
+            <swiper-container
+              class="mySwiper"
+              navigation="true"
+              pagination="true"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+
+              <!-- swiper 2 -->
+              <swiper-slide class="bg-[#292F36]">
+                <img src="photos/portfolio1.jpg" class="" alt="site photo" />
+              </swiper-slide>
+              <!-- swiper 3 -->
+              <swiper-slide class="bg-[#292F36]">
+                <img src="photos/portfolio2.jpg" class="" alt="site photo" />
+              </swiper-slide>
+              <!-- swiper 4 -->
+              <swiper-slide class="bg-[#292F36]">
+                <img src="photos/portfolio 3.jpg" class="" alt="site photo" />
+              </swiper-slide>
+              <!-- swiper 5 -->
+              <swiper-slide class="bg-[#292F36]">
+                <img src="photos/portfolio4.jpg" class="" alt="site photo" />
+              </swiper-slide>
+              <!-- swiper 6 -->
+              <swiper-slide class="bg-[#292F36]">
+                <img src="photos/portfolio 5.jpg" class="" alt="site photo" />
+              </swiper-slide>
+            </swiper-container>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+            <h1
+              class="text-white text-center font-semibold text-3xl capitalize my-6"
+            >
+              built with:
+              <span class="text-[#12F7D6]"
+                >html, tailwind css and vanilla javascript</span
+              >
+            </h1>
+          </div>
+        </div>
+        <!-- projects div 2-->
+        <div class="h-[900px] w-full flex flex-col">
+          <!-- sub div 1 -->
+          <div class="h-[900px] w-full relative px-[15%] py-[7%]">
+            <span class="flex flex-row justify-between">
+              <h1 class="text-white font-bold text-3xl my-4 capitalize">
+                Hospital website for patients
+              </h1>
+              <a
+                href="med-web-kappa.vercel.app"
+                class="font-semibold text-3xl my-4 text-[#12F7D6] duration-300 ease-out hover:underline"
+                >Visit Website</a
+              >
+            </span>
+
+            <style>
+              @media (min-width: 768px) {
+                swiper-container {
+                  width: 100%;
+                  height: 82%;
+                }
+
+                swiper-slide {
+                  text-align: center;
+                  font-size: 18px;
+                  background: #fff;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 24px;
+                }
+
+                swiper-slide img {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+            </style>
+
+            <swiper-container
+              class="mySwiper"
+              navigation="true"
+              pagination="true"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <!-- swiper 1 -->
+              <swiper-slide>
+                <img src="photos/med1.jpg" class="" alt="site photo" />
+              </swiper-slide>
+              <!-- swiper 2 -->
+              <swiper-slide>
+                <img src="photos/med2.jpg" class="" alt="site photo" />
+              </swiper-slide>
+              <!-- swiper 3 -->
+              <swiper-slide>
+                <img src="photos/med3.jpg" class="" alt="site photo" />
+              </swiper-slide>
+              <!-- swiper 4 -->
+              <swiper-slide>
+                <img src="photos/med4.jpg" class="" alt="site photo" />
+              </swiper-slide>
+              <!-- swiper 5 -->
+              <swiper-slide>
+                <img src="photos/med5.jpg" class="" alt="site photo" />
+              </swiper-slide>
+              <!-- swiper 6 -->
+              <swiper-slide>
+                <img src="photos/med6.jpg" class="" alt="site photo" />
+              </swiper-slide>
+            </swiper-container>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+            <h1
+              class="text-white text-center font-semibold text-3xl capitalize my-6"
+            >
+              built with:
+              <span class="text-[#12F7D6]"
+                >html, tailwind css and vanilla javascript</span
+              >
+            </h1>
+          </div>
+        </div>
+        <!-- projects div 3-->
+        <div class="h-[900px] w-full flex flex-col">
+          <!-- sub div 1 -->
+          <div class="h-[900px] w-full relative px-[15%] py-[7%]">
+            <span class="flex flex-row justify-between">
+              <h1 class="text-white font-bold text-3xl my-4 capitalize">
+                Food order website
+              </h1>
+              <a
+                href="food-web-app-tau.vercel.app"
+                class="font-semibold text-3xl my-4 text-[#12F7D6] duration-300 ease-out hover:underline"
+                >Visit Website</a
+              >
+            </span>
+
+            <style>
+              @media (min-width: 768px) {
+                swiper-container {
+                  width: 100%;
+                  height: 82%;
+                }
+
+                swiper-slide {
+                  text-align: center;
+                  font-size: 18px;
+                  background: #fff;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 24px;
+                }
+
+                swiper-slide img {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+            </style>
+
+            <swiper-container
+              class="mySwiper"
+              navigation="true"
+              pagination="true"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <!-- swiper 1 -->
+              <swiper-slide>
+                <img src="photos/food1.jpg" class="" alt="site photo" />
+              </swiper-slide>
+              <!-- swiper 2 -->
+              <swiper-slide>
+                <img src="photos/food2.jpg" class="" alt="site photo" />
+              </swiper-slide>
+              <!-- swiper 3 -->
+              <swiper-slide>
+                <img src="photos/food3.jpg" class="" alt="site photo" />
+              </swiper-slide>
+            </swiper-container>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+            <h1
+              class="text-white text-center font-semibold text-3xl capitalize my-6"
+            >
+              built with:
+              <span class="text-[#12F7D6]"
+                >html, tailwind css and vanilla javascript</span
+              >
+            </h1>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- small screen article -->
+    <article
+      class="md:hidden block h-[1850px] w-full relative"
+      style="
+        background-image: url('photos/Image\ 11\ 1.png');
+        background-size: 200px;
+      "
+    >
+      <div class="h-full w-full bg-[#1A1E23] flex flex-col opacity-[0.85]">
+        <div
+          class="w-full h-[250px] flex flex-col items-center justify-center overflow-hidden"
+        >
+          <img
+            src="photos/mouse.png"
+            class="w-[30px]"
+            alt="mouse"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          />
+          <img src="photos/Arrow 1.png" class="h-[60px] my-2" alt="arrow" />
+          <h1
+            class="capitalize font-semibold text-2xl text-[#12F7D6] tracking-wider"
+          >
+            projects
+          </h1>
+          <img src="photos/Line 22.png" class="w-[116px] my-2" alt="line" />
+          <p
+            class="text-center text-white text-sm"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            I had the pleasure of building these awesome projects <br />
+            with various tech stacks
+          </p>
+        </div>
+        <!-- project div -->
+        <div class="w-full h-[400px]">
+          <!-- sub-div -->
+          <div class="h-full w-full relative py-[20%] px-[10%]">
+            <style>
+              swiper-container {
+                width: 100%;
+                height: 90%;
+              }
+
+              swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background-color: #150e28;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 16px;
+              }
+
+              swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+              }
+            </style>
+
+            <span class="flex justify-between my-1 capitalize"
+              ><h1 class="text-white text-sm font-semibold">getLink project</h1>
+              <a
+                href="getlink-nonso-io.vercel.app"
+                class="text-[#12F7D6] font-semibold"
+                >visit site</a
+              ></span
+            >
+
+            <swiper-container
+              class="mySwiper"
+              navigation="false"
+              pagination="true"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <!-- swiper 1 -->
+              <swiper-slide class="bg-[#150E28]">
+                <img src="photos/getlinked.jpg" class="" alt="website" />
+              </swiper-slide>
+              <!-- swiper 2 -->
+              <swiper-slide class="bg-[#150E28]">
+                <img src="photos/getlink2.jpg" class="" alt="website" />
+              </swiper-slide>
+              <!-- swiper 3 -->
+              <swiper-slide class="bg-[#150E28]">
+                <img src="photos/getlink3.jpg" class="" alt="website" />
+              </swiper-slide>
+              <!-- swiper 4 -->
+              <swiper-slide class="bg-[#150E28]">
+                <img src="photos/getlink4.jpg" class="" alt="website" />
+              </swiper-slide>
+              <!-- swiper 5 -->
+              <swiper-slide class="bg-[#150E28]">
+                <img src="photos/getlink5.jpg" class="" alt="website" />
+              </swiper-slide>
+              <!-- swiper 6 -->
+              <swiper-slide class="bg-[#150E28]">
+                <img src="photos/getlink6.jpg" class="" alt="website" />
+              </swiper-slide>
+            </swiper-container>
+            <h1
+              class="text-white text-center font-semibold text-sm capitalize my-4"
+            >
+              built with:
+              <span class="text-[#12F7D6]"
+                >html, tailwind css and vanilla javascript</span
+              >
+            </h1>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+          </div>
+        </div>
+        <div class="w-full h-[400px]">
+          <!-- sub-div -->
+          <div class="h-full w-full relative py-[20%] px-[10%]">
+            <style>
+              swiper-container {
+                width: 100%;
+                height: 90%;
+              }
+
+              swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background-color: #150e28;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 16px;
+              }
+
+              swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+              }
+            </style>
+
+            <span class="flex justify-between my-1 capitalize"
+              ><h1 class="text-white text-sm font-semibold">Personal Portfolio</h1>
+              <a
+                href="getlink-nonso-io.vercel.app"
+                class="text-[#12F7D6] font-semibold"
+                >visit site</a
+              ></span
+            >
+
+            <swiper-container
+              class="mySwiper"
+              navigation="false"
+              pagination="true"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <!-- swiper 1 -->
+              <swiper-slide class="bg-[#292F36]">
+                <img src="photos/portfolio1.jpg" class="" alt="website" />
+              </swiper-slide>
+              <!-- swiper 2 -->
+              <swiper-slide class="bg-[#292F36]">
+                <img src="photos/portfolio2.jpg" class="" alt="website" />
+              </swiper-slide>
+              <!-- swiper 3 -->
+              <swiper-slide class="bg-[#292F36]">
+                <img src="photos/portfolio 3.jpg" class="" alt="website" />
+              </swiper-slide>
+              <!-- swiper 4 -->
+              <swiper-slide class="bg-[#292F36]">
+                <img src="photos/portfolio4.jpg" class="" alt="website" />
+              </swiper-slide>
+              <!-- swiper 5 -->
+              <swiper-slide class="bg-[#292F36]">
+                <img src="photos/portfolio 5.jpg" class="" alt="website" />
+              </swiper-slide>
+            </swiper-container>
+            <h1
+              class="text-white text-center font-semibold text-sm capitalize my-4"
+            >
+              built with:
+              <span class="text-[#12F7D6]"
+                >html, tailwind css and vanilla javascript</span
+              >
+            </h1>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+          </div>
+        </div>
+
+        <!-- sub div 2 -->
+        <div
+          class="w-full h-[400px] relative py-[20%] px-[10%] overflow-hidden"
+        >
+          <style>
+            swiper-container {
+              width: 100%;
+              height: 90%;
+            }
+
+            swiper-slide {
+              text-align: center;
+              font-size: 18px;
+              background-color: #f8f8f8;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 16px;
+            }
+
+            swiper-slide img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          </style>
+
+          <span class="flex justify-between my-1 capitalize"
+            ><h1 class="text-white text-sm font-semibold">hospital website</h1>
+            <a
+              href="med-web-kappa.vercel.app"
+              class="text-[#12F7D6] font-semibold"
+              >visit site</a
+            ></span
+          >
+
+          <swiper-container
+            class="mySwiper"
+            navigation="false"
+            pagination="true"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            <!-- swiper 1 -->
+            <swiper-slide>
+              <img src="photos/med1.jpg" class="" alt="website" />
+            </swiper-slide>
+            <!-- swiper 2 -->
+            <swiper-slide>
+              <img src="photos/med2.jpg" class="" alt="website" />
+            </swiper-slide>
+            <!-- swiper 3 -->
+            <swiper-slide>
+              <img src="photos/med3.jpg" class="" alt="website" />
+            </swiper-slide>
+            <!-- swiper 4 -->
+            <swiper-slide>
+              <img src="photos/med4.jpg" class="" alt="website" />
+            </swiper-slide>
+            <!-- swiper 5 -->
+            <swiper-slide>
+              <img src="photos/med5.jpg" class="" alt="website" />
+            </swiper-slide>
+            <!-- swiper 6 -->
+            <swiper-slide>
+              <img src="photos/med6.jpg" class="" alt="website" />
+            </swiper-slide>
+          </swiper-container>
+          <h1
+            class="text-white text-center font-semibold text-sm capitalize my-4"
+          >
+            built with:
+            <span class="text-[#12F7D6]"
+              >html, tailwind css and vanilla javascript</span
+            >
+          </h1>
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        </div>
+
+        <!-- sub div 3 -->
+        <div
+          class="w-full h-[400px] relative py-[20%] px-[10%] overflow-hidden"
+        >
+          <style>
+            swiper-container {
+              width: 100%;
+              height: 90%;
+            }
+
+            swiper-slide {
+              text-align: center;
+              font-size: 18px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 16px;
+            }
+
+            swiper-slide img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          </style>
+
+          <span class="flex justify-between my-1 capitalize"
+            ><h1 class="text-white text-sm font-semibold">
+              food order website
+            </h1>
+            <a
+              href="food-web-app-tau.vercel.app"
+              class="text-[#12F7D6] font-semibold"
+              >visit site</a
+            ></span
+          >
+
+          <swiper-container
+            class="mySwiper"
+            navigation="false"
+            pagination="true"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            <!-- swiper 1 -->
+            <swiper-slide>
+              <img src="photos/food1.jpg" class="" alt="website" />
+            </swiper-slide>
+            <!-- swiper 2 -->
+            <swiper-slide>
+              <img src="photos/food2.jpg" class="" alt="website" />
+            </swiper-slide>
+            <!-- swiper 3 -->
+            <swiper-slide>
+              <img src="photos/food3.jpg" class="" alt="website" />
+            </swiper-slide>
+          </swiper-container>
+          <h1
+            class="text-white text-center font-semibold text-sm capitalize my-4"
+          >
+            built with:
+            <span class="text-[#12F7D6]"
+              >html, tailwind css and vanilla javascript</span
+            >
+          </h1>
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        </div>
+      </div>
+    </article>
+
+    <!-- big screen main -->
+    <main
+      class="md:h-[900px] w-full bg-[#1A1E23] flex flex-col overflow-hidden"
+    >
+      <div class="h-[300px] w-full flex flex-col items-center justify-center">
+        <img
+          src="photos/mouse.png"
+          class="my-1"
+          alt="mouse"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        />
+        <img
+          src="photos/Arrow 1.png"
+          class="my-1"
+          alt="line"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        />
+        <h1 class="text-[#12F7D6] font-semibold text-4xl capitalize mt-3">
+          contact
+        </h1>
+        <p
+          class="text-white mt-2 text-center"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
+          I’m currently available for freelance jobs and any other kind of
+          projects
+        </p>
+      </div>
+      <div class="h-[200px] w-full flex items-center justify-center">
+        <span
+          class="py-4 px-5 rounded-l-3xl rounded-br-3xl border-2 border-[#12F7D6]"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
+          <p
+            class="capitalize text-[#12F7D6] md:text-3xl text-2xl font-semibold tracking-wider message">
+            send me a message
+          </p>
+          <style>
+            .message{
+            overflow: hidden;
+            border-right: 2px solid white;
+            animation: typing 5s steps(16) infinite;
+            white-space: nowrap;}
+
+            @keyframes typing {
+              from {
+                width: 0;
+              }
+              to {
+                width: 108%;
+              }
+}
+
+          </style>
+        </span>
+      </div>
+      <div
+        class="md:h-[500px] h-[400px] w-full flex items-center justify-center overflow-hidden"
+      >
+        <!-- form -->
+        <form action="https://formsubmit.co/d612f9202ccfe9ca0f2cea2d341d456a" class="h-full" 
+        method="POST">
+          <div class="h-[30%] flex flex-row overflow-hidden relative">
+            <span
+              class="md:mr-12 mr-0 md:pl-0 pl-0"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <h1 class="capitalize text-[#12F7D6]">your name *</h1>
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter Your Name"
+                required
+                class="border-b-2 border-t-0 border-l-0 border-r-0 border-[#12F7D6] outline-0
+                 bg-transparent pl-0 md:w-auto w-36 text-white"
+              />
+            </span>
+            <span
+              class="md:ml-12 ml-6"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+            >
+              <h1 class="capitalize text-[#12F7D6]">your email *</h1>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Your email"
+                required
+                class="border-b-2 border-t-0 border-l-0 border-r-0 border-[#12F7D6] outline-0 bg-transparent pl-0 md:w-auto w-36 text-white"
+              />
+            </span>
+          </div>
+          <span class="">
+            <h1 class="capitalize text-[#12F7D6]">your message *</h1>
+            <input
+              type="text"
+              name="message"
+              placeholder="Enter Your needs"
+              class="border-b-2 border-t-0 border-l-0 border-r-0 border-[#12F7D6] outline-0 bg-transparent md:pl-0 pl-0 md:w-[484px] w-[312px] text-white"
+              required
+            />
+          </span>
+          <span
+            class="flex items-center justify-center"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          >
+            <button
+              class="mt-24 py-3 px-10 capitalize font-semibold rounded-full bg-[#12F7D6] 
+              shadow-md animate-pulse duration-300 ease-in-out"
+              type="submit"
+            >
+              send message <i class="fa-regular fa-paper-plane ml-3"></i>
+            </button>
+          </span>
+        </form>
+
+        <script>
+          function validateForm() {
+            // Get the form elements
+            let name = document.forms["messageForm"]["Name"];
+            let email = document.forms["messageForm"]["Email"];
+            let phone = document.forms["messageForm"]["text"];
+      
+            // Check if the name field is empty
+            if (name.value == "") {
+              alert("Please enter your name.");
+              name.focus();
+              return false;
+            }
+      
+            // Check if the email field is valid
+            if (email.value == "" || !email.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+              alert("Please enter a valid email address.");
+              email.focus();
+              return false;
+            }
+                                                           
+            // Check if the phone field is valid
+            // if (phone.value == "" || !phone.value.match(/^\d{11}$/)) {
+            //   alert("Please enter a valid phone number.");
+            //   phone.focus();
+            //   return false;
+            // }
+      
+            // If all the validations are passed, return true
+            return true;
+          }
+        </script>
+      </div>
+    </main>
+
+    <!-- go top button -->
+    <button
+      class="go-top-btn fixed md:right-[20px] right-4 md:bottom-[30px] bottom-5 bg-[#12F7D6] md:w-[40px] w-[30px] md:h-[40px] h-[30px] hidden rounded-full items-center justify-center animate-bounce"
+    >
+      <i class="fa-solid fa-arrow-up cursor-pointer text-2xl text-black"></i>
+    </button>
+
+    <script>
+      const goTopBtn = document.querySelector(".go-top-btn");
+
+      window.addEventListener("scroll", checkHeight);
+
+      function checkHeight() {
+        if (window.scrollY > 1000) {
+          goTopBtn.style.display = "flex";
+        } else {
+          goTopBtn.style.display = "none";
+        }
+      }
+
+      goTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+        });
+      });
+    </script>
+
+    <!-- footer for big screen -->
+    <footer
+      class="bg-[#1A1E23] h-[80px] w-full hidden md:flex flex-row justify-around items-center border-t border-gray-600"
+    >
+      <h3 class="text-lg font-semibold text-white">
+        © 2023 EmmanuelNonso. All rights reserved.
+      </h3>
+      <h3 class="text-lg font-semibold text-white">
+        Privacy Policy &nbsp; &nbsp; Terms & Conditions
+      </h3>
+      <ul class="flex flex-row">
+        <span class="bg-[#12F7D6] py-1 px-2 rounded-full mx-2"
+          ><i
+            class="fa-brands fa-instagram text-xl cursor-pointer hover:text-pink-400 duration-300 ease-in-out"
+          ></i
+        ></span>
+        <span class="bg-[#12F7D6] py-1 px-2 rounded-full mx-2"
+          ><i class="fa-brands fa-x-twitter text-xl cursor-pointer"></i
+        ></span>
+        <span class="bg-[#12F7D6] py-1 px-2 rounded-full mx-2"
+          ><i class="fa-brands fa-github text-xl cursor-pointer"></i
+        ></span>
+      </ul>
+    </footer>
+
+    <!-- footer for small screenas -->
+    <footer class=" md:hidden flex flex-col h-[150px] w-full bg-[#1A1E23]">
+      <div class="h-1/2 w-full flex items-center justify-center relative">
+        <span class="bg-[#12F7D6] py-1 px-2 rounded-full mx-2"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          ><i class="fa-brands fa-instagram"></i
+        ></span>
+        <span class="bg-[#12F7D6] py-1 px-2 rounded-full mx-2"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></span>
+        <span class="bg-[#12F7D6] py-1 px-2 rounded-full mx-2"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+          ><i class="fa-brands fa-github"></i
+        ></span>
+      </div>
+      <div class="h-1/2 w-full flex items-center justify-around">
+        <p class="text-xs mx-[5%] text-gray-500">© 2023 EmmanuelNonso All rights reserved. &nbsp; &nbsp;
+          Privacy Policy &nbsp;
+          Terms & Conditions</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
