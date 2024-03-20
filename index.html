@@ -394,10 +394,10 @@
     <!-- small screen main -->
     <main class="bg-[#292F36] h-[800px] w-full flex flex-col md:hidden">
       <!-- 1st div -->
-      <div class="bg-inherit h-3/5 w-full flex flex-row pl-[5%] pt-[10%]">
+      <div class="bg-[#292F36] h-2/5 w-full flex flex-row pl-[5%] pt-[10%]">
         <!-- icons div -->
         <div
-          class="w-[15%] h-[300px] bg-[#1A1E23] rounded-full flex-col flex items-center justify-evenly border border-[#12F7D6] 
+          class="w-[15%] h-[280px] bg-[#1A1E23] rounded-full flex-col flex items-center justify-evenly border border-[#12F7D6] 
           relative overflow-hidden"
           style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
         >
@@ -458,8 +458,7 @@
           </a>
         </div>
         
-        <div class="h-full w-[80%] flex flex-col"> 
-          <div class="h-full w-full pt-6 px-5 relative overflow-hidden">
+        <div class="h-full w-[80%] pt-2 px-5 relative overflow-hidden bg-inherit"> 
             <h1
               class="text-2xl font-semibold leading-normal text-white"
               data-aos="fade-up"
@@ -472,10 +471,10 @@
             <h2
               class="text-2xl font-semibold leading-normal text-white typing-ads2"
             >
-              Front-End Developer........
+              Front-End Developer.......
             </h2>
             <p
-              class="text-xs mt-8 mr-4 text-white leading-relaxed text-justify"
+              class="text-xs mt-4 mr-4 text-white leading-relaxed text-justify"
               data-aos="zoom-in"
               data-aos-duration="1500"
               data-aos-easing="ease-in-out"
@@ -485,27 +484,7 @@
               looking for a developer that likes to get stuff done.
             </p>
 
-            <!-- digital clock -->
-          <div
-              class="clock h-[25%] bg-[#1A1E23] w-[220px] items-center justify-center
-              mt-12 pt-2 text-[#12F7D6] rounded-xl shadow-xl"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-          >
-              <div id="Dates" class="text-center text-xl">
-                Wednesday, 25 July 2004
-              </div>
-
-              <ul class="list-none flex gap-[15px] text-3xl items-center ml-5">
-                <li id="hour">05</li>
-                <li id="point">:</li>
-                <li id="min">20</li>
-                <li id="point">:</li>
-                <li id="secs">30</li>
-              </ul>
-          </div>
-
+            
             <style>
               @media (max-width: 768px) {
                 .typing-ads2 {
@@ -525,70 +504,94 @@
                 }
               }
             </style>
-          </div>
-        </div>
-
-          
-          <script>
-            function clock() {
-              var monthNames = [
-                "January",
-                "February",
-                "March",
-                "April",
-                "May",
-                "June",
-                "July",
-                "August",
-                "September",
-                "October",
-                "November",
-                "December",
-              ];
-              var dayNames = [
-                "Sunday",
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-              ];
-              var today = new Date();
-
-              document.getElementById("Dates").innerHTML =
-                dayNames[today.getDay()] +
-                " " +
-                today.getDate() +
-                " " +
-                monthNames[today.getMonth()] +
-                ", " +
-                today.getFullYear();
-
-              var h = today.getHours();
-              var m = today.getMinutes();
-              var s = today.getSeconds();
-              var day = h < 11 ? "AM" : "PM";
-
-              h = h < 10 ? "0" + h : h;
-              m = m < 10 ? "0" + m : m;
-              s = s < 10 ? "0" + s : s;
-
-              document.getElementById("hour").innerHTML = h;
-              document.getElementById("min").innerHTML = m;
-              document.getElementById("secs").innerHTML = s;
-            }
-            var inter = setInterval(clock, 400);
-          </script>
         </div>
       </div>
 
+
       <!-- 2nd div -->
-      <div class="bg-inherit h-2/5 w-full flex flex-col">
+      <div class="bg-inherit h-3/5 w-full flex flex-col">
+
+        <!-- clock div -->
+        <div class="h-[160px] w-full bg-inherit flex items-center justify-center">
+          <!-- digital clock -->
+        <div
+          class="clock h-[70%] bg-[#1A1E23] w-[280px] flex flex-col items-center justify-center
+          pt-2 text-[#12F7D6] rounded-xl shadow-xl"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+      >
+          <div id="Dates" class="text-center text-xl">
+            Wednesday, 25 July 2004
+          </div>
+
+          <ul class="list-none flex gap-[15px] text-3xl items-center justify-center">
+            <li id="hour">05</li>
+            <li id="point">:</li>
+            <li id="min">20</li>
+            <li id="point">:</li>
+            <li id="secs">30</li>
+          </ul>
+      </div>
+
+      <!-- javascript -->
+      <script>
+        function clock() {
+          var monthNames = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+          ];
+          var dayNames = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+          ];
+          var today = new Date();
+
+          document.getElementById("Dates").innerHTML =
+            dayNames[today.getDay()] +
+            " " +
+            today.getDate() +
+            " " +
+            monthNames[today.getMonth()] +
+            ", " +
+            today.getFullYear();
+
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          var day = h < 11 ? "AM" : "PM";
+
+          h = h < 10 ? "0" + h : h;
+          m = m < 10 ? "0" + m : m;
+          s = s < 10 ? "0" + s : s;
+
+          document.getElementById("hour").innerHTML = h;
+          document.getElementById("min").innerHTML = m;
+          document.getElementById("secs").innerHTML = s;
+        }
+        var inter = setInterval(clock, 400);
+      </script>
+
+        </div>
 
         <!-- message and cv div -->
-        <div class="h-[30%] w-full bg-inherit flex flex-row overflow-hidden">
-          <div class="w-1/2 h-full flex flex-row items-center justify-end mr-0">
+        <div class="h-[160px] w-full flex flex-row overflow-hidden">
+          <div class="w-1/2 h-full flex flex-row items-center justify-end">
             <h2
             class="text-[#12F7D6] text-xl capitalize font-semibold"
             data-aos="fade-right"
@@ -609,7 +612,7 @@
           </div>
 
           <!-- cv div -->
-          <div class="w-1/2 h-full flex flex-row items-center justify-start ml-6">
+          <div class="w-1/2 h-full flex flex-row items-center justify-start pl-5">
             <h2
               class="text-[#12F7D6] text-xl capitalize font-semibold"
               data-aos="fade-left"
@@ -633,7 +636,7 @@
 
 
             <!-- experiencw div -->
-        <div class="h-[70%] w-full flex items-center justify-center">
+        <div class="h-[160px] w-full flex items-center justify-center">
             <div
             class="h-[50%] w-[90%] bg-[#1A1E23] rounded-tl-full rounded-bl-full rounded-br-full flex flex-row relative overflow-hidden"
             style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px"
