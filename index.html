@@ -219,10 +219,11 @@
               I'm <span class="text-[#12F7D6]">Nonso</span>,
             </h1>
             <h2
-              class="text-white font-semibold text-5xl tracking-wider typing1"
-            >
-              Front-End Developer
+              class="text-white font-semibold text-5xl tracking-wider typing1">
+              <span class="auto-type text-[#12F7D6]"></span>
             </h2>
+
+
             <br />
             <p class="md:mt-12 text-white font-serif tracking-wider">
               I help businesses grow by crafting amazing web experiences. If
@@ -301,6 +302,7 @@
               var inter = setInterval(clock, 400);
             </script>
           </div>
+
           <div
             class="bg-inherit md:pl-8 md:w-full md:h-[30%] items-center flex"
           >
@@ -358,7 +360,7 @@
             >
               4
             </h1>
-            <p class="text-white ml-2">
+            <p class="text-white ml-6">
               Programming <br />
               Language
             </p>
@@ -370,7 +372,7 @@
             data-aos-easing="ease-in-out"
           >
             <h1 class="text-[#12F7D6] text-4xl font-semibold" id="head2">6</h1>
-            <p class="text-white ml-2">
+            <p class="text-white ml-6">
               Development<br />
               Tools
             </p>
@@ -382,7 +384,7 @@
             data-aos-easing="ease-in-out"
           >
             <h1 class="text-[#12F7D6] text-4xl font-semibold" id="head3">3</h1>
-            <p class="text-white ml-2">
+            <p class="text-white ml-6">
               Years of <br />
               Experience
             </p>
@@ -469,9 +471,10 @@
               I’m <span class="text-[#12F7D6] capitalize">nonso</span>
             </h1>
             <h2
-              class="text-2xl font-semibold leading-normal text-white typing-ads2"
-            >
-              Front-End Developer.......
+              class="text-2xl font-semibold leading-normal text-white typing-ads2">
+              <span class="auto-typing text-[#12F7D6]">
+
+              </span>
             </h2>
             <p
               class="text-xs mt-4 mr-4 text-white leading-relaxed text-justify"
@@ -483,27 +486,6 @@
               different web technologies to create amazing websites. If you’re
               looking for a developer that likes to get stuff done.
             </p>
-
-            
-            <style>
-              @media (max-width: 768px) {
-                .typing-ads2 {
-                  overflow: hidden;
-                  border-right: 2px solid white;
-                  animation: typing 5s steps(25) infinite;
-                  white-space: nowrap;
-                }
-
-                @keyframes typing {
-                  from {
-                    width: 0;
-                  }
-                  to {
-                    width: 102%;
-                  }
-                }
-              }
-            </style>
         </div>
       </div>
 
@@ -694,7 +676,25 @@
 
 
 
+   <!-- typing animation -->
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
+   <script>
+    var typed = new Typed('.auto-type', {
+      strings : ["Front-End Developer", "Back-End Developer", "Full-Stack Developer"],
+      typeSpeed : 100,
+      backSpeed : 50,
+      loop : true 
+    })
+   </script>
+   <script>
+    var typed = new Typed('.auto-typing', {
+      strings : ["Front-End Developer", "Back-End Developer", "Full-Stack Developer"],
+      typeSpeed : 100,
+      backSpeed : 50,
+      loop : true 
+    })
+   </script>
 
 
 
