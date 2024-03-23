@@ -40,29 +40,7 @@
     to {
       width: 106%;
     }
-  } */
-
-
-    /* big screen typing animation */
-@media (min-width: 768px) {
-  .typing1 {
-    overflow: hidden;
-    border-right: 2px solid white;
-    animation: typing 5s steps(18) infinite;
-    white-space: nowrap;
-  }
-
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 75%;
-    }
-  }
-}
-
-/* bg-[#292F36] */
+  } bg-[#292F36] */
 
 #search-input{
   outline: none;
