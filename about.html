@@ -83,10 +83,7 @@
       </div>
 
       <ul
-        class="nav-links md:flex md:items-center md:static md:z-[1] z-[1] absolute
-        md:flex-row flex-col flex items-center justify-center
-         md:min-h-fit min-h-[40vh] left-[-100%] top-[[250px]%] md:pt-0 pt-14 bg-inherit 
-         w-full md:w-auto md:py-0 py-4 md:px-0 px-[12px] ease-in duration-500 md:bg-opacity-0 bg-opacity-100"
+        class="nav-links md:flex md:items-center md:static md:z-[1] z-[1] absolute md:flex-row flex-col flex items-center justify-center md:min-h-fit min-h-[40vh] left-[-100%] top-[[250px]%] md:pt-0 pt-14 bg-inherit w-full md:w-auto md:py-0 py-4 md:px-0 px-[12px] ease-in duration-500 md:bg-opacity-0 bg-opacity-100"
       >
         <li class="mx-6 md:my-1 md:mt-auto mt-0">
           <a
@@ -103,29 +100,47 @@
             >About Me</a
           >
         </li>
-        <div class="bg-white md:w-40 w-44 md:h-8 rounded-full md:mx-6 mx-6" id="search-form">
-          <input type="search" class="h-full w-4/5 rounded-full"
-           id="search-input" placeholder="search.....">
-          <button type="submit"><i class="fa-solid fa-magnifying-glass cursor-pointer"></i></button>
+        <div
+          class="bg-white md:w-40 w-44 md:h-8 rounded-full md:mx-6 mx-6"
+          id="search-form"
+        >
+          <input
+            type="search"
+            class="h-full w-4/5 rounded-full"
+            id="search-input"
+            placeholder="search....."
+          />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+          </button>
         </div>
 
-       <span class="flex flex-row px-3 py-1 md:mt-0 mt-6">
-        <li class="md:ml-7 md:mr-6 md:my-0">
-          <a href="https://www.instagram.com/nonso_emmy?igsh=c3k1bjE5NHJ6OTF5" class="">
-            <i class="fa-brands fa-instagram text-[#12F7D6] hover:text-white duration-300 ease-out md:text-2xl text-3xl"></i>
-          </a>
-        </li>
-        <li class="md:mx-4 md:my-0 mx-3">
-          <a href="https://twitter.com/Iamnonso_emmy/" class="">
-            <i class="fa-brands fa-x-twitter text-[#12F7D6] hover:text-white duration-300 ease-out md:text-2xl text-3xl"></i>
-          </a>
-        </li>
-        <li class="md:ml-4 md:my-0">
-          <a href="https://github.com/emmynonso" class="">
-            <i class="fa-brands fa-github text-[#12F7D6] hover:text-white duration-300 ease-out md:text-2xl text-3xl"></i>
-          </a>
-        </li>
-       </span>
+        <span class="flex flex-row px-3 py-1 md:mt-0 mt-6">
+          <li class="md:ml-7 md:mr-6 md:my-0">
+            <a
+              href="https://www.instagram.com/nonso_emmy?igsh=c3k1bjE5NHJ6OTF5"
+              class=""
+            >
+              <i
+                class="fa-brands fa-instagram text-[#12F7D6] hover:text-white duration-300 ease-out md:text-2xl text-3xl"
+              ></i>
+            </a>
+          </li>
+          <li class="md:mx-4 md:my-0 mx-3">
+            <a href="https://twitter.com/Iamnonso_emmy/" class="">
+              <i
+                class="fa-brands fa-x-twitter text-[#12F7D6] hover:text-white duration-300 ease-out md:text-2xl text-3xl"
+              ></i>
+            </a>
+          </li>
+          <li class="md:ml-4 md:my-0">
+            <a href="https://github.com/emmynonso" class="">
+              <i
+                class="fa-brands fa-github text-[#12F7D6] hover:text-white duration-300 ease-out md:text-2xl text-3xl"
+              ></i>
+            </a>
+          </li>
+        </span>
       </ul>
     </nav>
 
@@ -535,7 +550,9 @@
         background-size: 600px;
       "
     >
-      <div class="bg-[#1A1E23] opacity-[0.9] w-full flex flex-col h-full overflow-hidden">
+      <div
+        class="bg-[#1A1E23] opacity-[0.9] w-full flex flex-col h-full overflow-hidden"
+      >
         <div
           class="md:h-[300px] h-[20%] w-full flex flex-col items-center justify-center"
           data-aos="fade-down"
@@ -691,7 +708,6 @@
               data-aos-duration="1500"
               data-aos-easing="ease-in-out"
             >
-
               <!-- swiper 2 -->
               <swiper-slide class="bg-[#292F36]">
                 <img src="photos/portfolio1.jpg" class="" alt="site photo" />
@@ -734,7 +750,7 @@
                 Hospital website for patients
               </h1>
               <a
-                href="med-web-kappa.vercel.app"
+                href="edescare.vercel.app/"
                 class="font-semibold text-3xl my-4 text-[#12F7D6] duration-300 ease-out hover:underline"
                 >Visit Website</a
               >
@@ -1035,7 +1051,9 @@
             </style>
 
             <span class="flex justify-between my-1 capitalize"
-              ><h1 class="text-white text-sm font-semibold">Personal Portfolio</h1>
+              ><h1 class="text-white text-sm font-semibold">
+                Personal Portfolio
+              </h1>
               <a
                 href="my-portfolio-tau-sand-65.vercel.app"
                 class="text-[#12F7D6] font-semibold"
@@ -1243,6 +1261,7 @@
     <!-- big screen main -->
     <main
       class="md:h-[900px] w-full bg-[#1A1E23] flex flex-col overflow-hidden"
+      id="message"
     >
       <div class="h-[300px] w-full flex flex-col items-center justify-center">
         <img
@@ -1275,41 +1294,42 @@
         </p>
       </div>
       <div class="h-[200px] w-full flex items-center justify-center">
-        <span
-          class="py-4 px-5 rounded-l-3xl rounded-br-3xl border-2 border-[#12F7D6]"
+        <!-- big screen message display -->
+        <div
+          class="w-[25%] h-[68px] rounded-l-3xl rounded-br-3xl border-2 border-[#12F7D6] md:block hidden"
           data-aos="fade-up"
           data-aos-duration="1500"
           data-aos-easing="ease-in-out"
         >
           <p
-            class="capitalize text-[#12F7D6] md:text-3xl text-2xl font-semibold tracking-wider message">
-            send me a message
+            class="capitalize text-[#12F7D6] py-3 px-[7%] md:text-3xl text-2xl font-semibold tracking-wider"
+          >
+            <span class="auto-message"> </span>
           </p>
-          <style>
-            .message{
-            overflow: hidden;
-            border-right: 2px solid white;
-            animation: typing 5s steps(16) infinite;
-            white-space: nowrap;}
-
-            @keyframes typing {
-              from {
-                width: 0;
-              }
-              to {
-                width: 108%;
-              }
-}
-
-          </style>
-        </span>
+        </div>
+        <!-- small screen message display -->
+        <div
+          class="w-[80%] h-[60px] rounded-l-3xl rounded-br-3xl border-2 border-[#12F7D6] md:hidden block"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
+          <p
+            class="capitalize text-[#12F7D6] py-3 px-[6%] md:text-3xl text-2xl font-semibold tracking-wider"
+          >
+            <span class="auto-message2"> </span>
+          </p>
+        </div>
       </div>
       <div
         class="md:h-[500px] h-[400px] w-full flex items-center justify-center overflow-hidden"
       >
         <!-- form -->
-        <form action="https://formsubmit.co/d612f9202ccfe9ca0f2cea2d341d456a" class="h-full" 
-        method="POST">
+        <form
+          action="https://formsubmit.co/d612f9202ccfe9ca0f2cea2d341d456a"
+          class="h-full"
+          method="POST"
+        >
           <div class="h-[30%] flex flex-row overflow-hidden relative">
             <span
               class="md:mr-12 mr-0 md:pl-0 pl-0"
@@ -1323,8 +1343,7 @@
                 name="name"
                 placeholder="Enter Your Name"
                 required
-                class="border-b-2 border-t-0 border-l-0 border-r-0 border-[#12F7D6] outline-0
-                 bg-transparent pl-0 md:w-auto w-36 text-white"
+                class="border-b-2 border-t-0 border-l-0 border-r-0 border-[#12F7D6] outline-0 bg-transparent pl-0 md:w-auto w-36 text-white"
               />
             </span>
             <span
@@ -1360,8 +1379,7 @@
             data-aos-easing="ease-in-out"
           >
             <button
-              class="mt-24 py-3 px-10 capitalize font-semibold rounded-full bg-[#12F7D6] 
-              shadow-md animate-pulse duration-300 ease-in-out"
+              class="mt-24 py-3 px-10 capitalize font-semibold rounded-full bg-[#12F7D6] shadow-md animate-pulse duration-300 ease-in-out"
               type="submit"
             >
               send message <i class="fa-regular fa-paper-plane ml-3"></i>
@@ -1375,28 +1393,33 @@
             let name = document.forms["messageForm"]["Name"];
             let email = document.forms["messageForm"]["Email"];
             let phone = document.forms["messageForm"]["text"];
-      
+
             // Check if the name field is empty
             if (name.value == "") {
               alert("Please enter your name.");
               name.focus();
               return false;
             }
-      
+
             // Check if the email field is valid
-            if (email.value == "" || !email.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+            if (
+              email.value == "" ||
+              !email.value.match(
+                /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+              )
+            ) {
               alert("Please enter a valid email address.");
               email.focus();
               return false;
             }
-                                                           
+
             // Check if the phone field is valid
             // if (phone.value == "" || !phone.value.match(/^\d{11}$/)) {
             //   alert("Please enter a valid phone number.");
             //   phone.focus();
             //   return false;
             // }
-      
+
             // If all the validations are passed, return true
             return true;
           }
@@ -1443,71 +1466,99 @@
       </h3>
       <ul class="flex flex-row">
         <span class="bg-[#12F7D6] py-1 px-2 rounded-full mx-2"
-          ><a href="https://www.instagram.com/nonso_emmy?igsh=c3k1bjE5NHJ6OTF5"class>
+          ><a
+            href="https://www.instagram.com/nonso_emmy?igsh=c3k1bjE5NHJ6OTF5"
+            class
+          >
             <i
-            class="fa-brands fa-instagram text-xl cursor-pointer hover:text-pink-400 duration-300 ease-in-out"
-          ></i
-        >
-          </a></span>
+              class="fa-brands fa-instagram text-xl cursor-pointer hover:text-pink-400 duration-300 ease-in-out"
+            ></i> </a
+        ></span>
         <span class="bg-[#12F7D6] py-1 px-2 rounded-full mx-2"
-          ><a href="https://twitter.com/Iamnonso_emmy/"class>
+          ><a href="https://twitter.com/Iamnonso_emmy/" class>
             <i
-            class="fa-brands fa-x-twitter text-xl cursor-pointer hover:text-white duration-300 ease-in-out"
-          ></i
-        >
-          </a></span>
+              class="fa-brands fa-x-twitter text-xl cursor-pointer hover:text-white duration-300 ease-in-out"
+            ></i> </a
+        ></span>
         <span class="bg-[#12F7D6] py-1 px-2 rounded-full mx-2">
-          <a href="https://github.com/emmynonso"class>
+          <a href="https://github.com/emmynonso" class>
             <i
-            class="fa-brands fa-github text-xl cursor-pointer hover:text-white duration-300 ease-in-out"
-          ></i
-        >
+              class="fa-brands fa-github text-xl cursor-pointer hover:text-white duration-300 ease-in-out"
+            ></i>
           </a>
         </span>
       </ul>
     </footer>
 
     <!-- footer for small screenas -->
-    <footer class=" md:hidden flex flex-col h-[150px] w-full bg-[#1A1E23]">
+    <footer class="md:hidden flex flex-col h-[150px] w-full bg-[#1A1E23]">
       <div class="h-1/2 w-full flex items-center justify-center relative">
-        <span class="bg-[#12F7D6] py-1 px-2 rounded-full mx-2"
-            data-aos="fade-right"
-            data-aos-duration="1500"
-            data-aos-easing="ease-in-out"
-          ><a href="https://www.instagram.com/nonso_emmy?igsh=c3k1bjE5NHJ6OTF5"class>
-            <i
-            class="fa-brands fa-instagram text-xl cursor-pointer hover:text-pink-400 duration-300 ease-in-out"
-          ></i
-        >
-          </a></span>
-        <span class="bg-[#12F7D6] py-1 px-2 rounded-full mx-2"
-            data-aos="zoom-in"
-            data-aos-duration="1500"
-            data-aos-easing="ease-in-out"
-          ><a href="https://twitter.com/Iamnonso_emmy/"class>
-            <i
-            class="fa-brands fa-x-twitter text-xl cursor-pointer hover:text-white duration-300 ease-in-out"
-          ></i>
-          </a></span>
-        <span class="bg-[#12F7D6] py-1 px-2 rounded-full mx-2"
-            data-aos="fade-left"
-            data-aos-duration="1500"
-            data-aos-easing="ease-in-out"
+        <span
+          class="bg-[#12F7D6] py-1 px-2 rounded-full mx-2"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+          ><a
+            href="https://www.instagram.com/nonso_emmy?igsh=c3k1bjE5NHJ6OTF5"
+            class
           >
-          <a href="https://github.com/emmynonso"class>
             <i
-            class="fa-brands fa-github text-xl cursor-pointer hover:text-white duration-300 ease-in-out"
-          ></i
+              class="fa-brands fa-instagram text-xl cursor-pointer hover:text-pink-400 duration-300 ease-in-out"
+            ></i> </a
+        ></span>
+        <span
+          class="bg-[#12F7D6] py-1 px-2 rounded-full mx-2"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+          ><a href="https://twitter.com/Iamnonso_emmy/" class>
+            <i
+              class="fa-brands fa-x-twitter text-xl cursor-pointer hover:text-white duration-300 ease-in-out"
+            ></i> </a
+        ></span>
+        <span
+          class="bg-[#12F7D6] py-1 px-2 rounded-full mx-2"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
         >
+          <a href="https://github.com/emmynonso" class>
+            <i
+              class="fa-brands fa-github text-xl cursor-pointer hover:text-white duration-300 ease-in-out"
+            ></i>
           </a>
         </span>
       </div>
       <div class="h-1/2 w-full flex items-center justify-around">
-        <p class="text-xs mx-[5%] text-gray-500">© 2023 EmmanuelNonso All rights reserved. &nbsp; &nbsp;
-          Privacy Policy &nbsp;
-          Terms & Conditions</p>
+        <p class="text-xs mx-[5%] text-gray-500">
+          © 2023 EmmanuelNonso All rights reserved. &nbsp; &nbsp; Privacy Policy
+          &nbsp; Terms & Conditions
+        </p>
       </div>
     </footer>
+
+    <!-- auto typing animation -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- big screen -->
+    <script>
+      var typed = new Typed(".auto-message", {
+        strings: ["Send Me A Message", "Stating Your Needs"],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+
+    <!-- small screen -->
+    <script>
+      var typed = new Typed(".auto-message2", {
+        strings: ["Send Me A Message", "Stating Your Needs"],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
